@@ -6,13 +6,12 @@ import { Input } from "@/components/ui/input";
 import { JSX, SVGProps } from "react";
 import { signIn, signOut, useSession } from "next-auth/react";
 
-
 export function Chatbot() {
   const { data: session, status } = useSession();
   const { email, name, image } = session?.user || {};
 
   return (
-    <div className="min-h-screen bg-white text-black" >
+    <div className="min-h-screen bg-white text-black">
       <nav className="flex items-center justify-between px-4 py-2 bg-white">
         <div className="flex items-center space-x-4">
           <span className="text-xl font-bold">Atrato</span>
@@ -40,7 +39,8 @@ export function Chatbot() {
           />
         </div>
       </header>
-      <section className="px-4 py-12">
+
+      {/* <section className="px-4 py-12">
     
     <div style={{ backgroundImage: `url(Background.png)`, backgroundSize: '100% 100%', height: '620px' } }>
         <div className="max-w-md mx-auto bg-white rounded-lg border border-gray-200 p-4 dark:border-gray-800">
@@ -103,7 +103,7 @@ export function Chatbot() {
           </div>
         </div>
       </div>
-     </section>
+     </section> */}
     </div>
   );
 }

@@ -53,7 +53,15 @@ export function Dashboard() {
   ];
 
   if (status == "unauthenticated") {
-    return <div onClick={() => signIn("github")}>Sign in</div>;
+    return (
+      <div
+        onClick={() =>
+          signIn("github", { callbackUrl: `${window.location.origin}/admin` })
+        }
+      >
+        Sign in
+      </div>
+    );
   }
 
   return (
@@ -73,7 +81,7 @@ export function Dashboard() {
           </CardContent>
           <CardContent className="p-0">
             <div>
-              <div className={`bg-${info.color}-500 p-4 rounded-lg text-white`}>
+              <div className={`bg-${info.color}-500 p-4 rounded-lg `}>
                 <p className="text-xl font-semibold">Active Chats</p>
                 <p className="text-3xl font-bold">{info.activeChats}</p>
               </div>

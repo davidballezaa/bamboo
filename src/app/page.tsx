@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import { Dashboard } from "@/components/dashboard";
 import { Login } from "@/components/login";
@@ -12,7 +12,13 @@ export default function Home() {
     // <main className="flex min-h-screen flex-col items-center justify-between p-24">
     // <Dashboard />
     // <Login />
-    <div onClick={() => signIn("github")}>Sign in</div>
+    <div
+      onClick={() =>
+        signIn("github", { callbackUrl: `${window.location.origin}/admin` })
+      }
+    >
+      Sign in
+    </div>
     // </main>
   );
 }

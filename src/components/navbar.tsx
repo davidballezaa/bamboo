@@ -19,7 +19,15 @@ export function Navbar({ children }: { children: React.ReactNode }) {
   const { email, name, image } = session?.user || {};
 
   if (status == "unauthenticated") {
-    return <div onClick={() => signIn("github")}>Sign in</div>;
+    return (
+      <div
+        onClick={() =>
+          signIn("github", { callbackUrl: `${window.location.origin}/admin` })
+        }
+      >
+        Sign in
+      </div>
+    );
   }
 
   return (

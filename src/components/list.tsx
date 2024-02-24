@@ -90,13 +90,9 @@ export function List() {
   );
 }
 
-<<<<<<< Updated upstream
 function Package2Icon(
   props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
 ) {
-=======
-function Package2Icon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
->>>>>>> Stashed changes
   return (
     <svg
       {...props}
@@ -204,13 +200,9 @@ function UsersIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   );
 }
 
-<<<<<<< Updated upstream
 function LineChartIcon(
   props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
 ) {
-=======
-function LineChartIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
->>>>>>> Stashed changes
   return (
     <svg
       {...props}
