@@ -27,83 +27,85 @@ export function Chatbot() {
         </div>
         <div className="mt-12 md:mt-0">
           <img
-            alt="Mobile phone"
+            alt="atrato"
             className="mx-auto"
-            height="600"
-            src="/placeholder.svg"
-            style={{
-              aspectRatio: "300/600",
-              objectFit: "cover",
-            }}
-            width="300"
+            src="https://www.pronetwork.mx/wp-content/uploads/2022/10/Atrato-icon-color-jpg-removebg-preview.png"
           />
         </div>
       </header>
 
-      {/* <section className="px-4 py-12">
-    
-    <div style={{ backgroundImage: `url(Background.png)`, backgroundSize: '100% 100%', height: '620px' } }>
-        <div className="max-w-md mx-auto bg-white rounded-lg border border-gray-200 p-4 dark:border-gray-800">
-          <div className="flex items-center justify-between mb-4">
-            <h2 className="text-lg font-semibold">Chat con Atrato</h2>
-            <img
-              alt="Avatar"
-              className="rounded-full"
-              height="32"
-              src={image || ""}
-              style={{
-                aspectRatio: "32/32",
-                objectFit: "cover",
-              }}
-              width="32"
-            />
-          </div>
-          <div className="mb-4">
-            <ScrollArea className="h-96 w-full rounded-md border border-gray-200 p-4 space-y-4 bg-[#f0f0f0] bg-cover bg-center dark:border-gray-800">
-              {status != "authenticated" ? (
-                <p
-                  className="flex items-center text-center "
-                  onClick={() => signIn("github")}
-                >
-                  Sign in to chat
-                </p>
-              ) : (
-                <>
-                  <div className="flex items-center space-x-2">
-                    <Avatar>
-                      <AvatarImage
-                        alt="Atrato bot"
-                        src="https://media.licdn.com/dms/image/C4D0BAQHXl_XyT8nB4g/company-logo_200_200/0/1667865154349/atratopago_logo?e=2147483647&v=beta&t=LtEBU1IYu6ojylS96XaqNnRS8asGH7Xsj2KgIm03VJk"
-                      />
-                    </Avatar>
-                    <div className="max-w-[300px] bg-gray-100 rounded-lg p-2">
-                      <p className="text-sm">
-                        ¡Hola! ¿En qué puedo ayudarte hoy?
-                      </p>
+      <section className="px-4 py-12">
+        <div
+          style={{
+            backgroundImage: `url(Background.png)`,
+            backgroundSize: "100% 100%",
+            height: "620px",
+          }}
+        >
+          <div className="max-w-md mx-auto bg-white rounded-lg border border-gray-200 p-4 dark:border-gray-800">
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-lg font-semibold">Chat con Atrato</h2>
+              <img
+                alt="Avatar"
+                className="rounded-full"
+                height="32"
+                src={image || ""}
+                style={{
+                  aspectRatio: "32/32",
+                  objectFit: "cover",
+                }}
+                width="32"
+              />
+            </div>
+            <div className="mb-4">
+              <ScrollArea className="h-96 w-full rounded-md border border-gray-200 p-4 space-y-4 bg-[#f0f0f0] bg-cover bg-center dark:border-gray-800">
+                {status != "authenticated" ? (
+                  <p
+                    className="flex items-center text-center "
+                    onClick={() => signIn("github")}
+                  >
+                    Sign in to chat
+                  </p>
+                ) : (
+                  <>
+                    <div className="flex items-center space-x-2">
+                      <Avatar>
+                        <AvatarImage
+                          alt="Atrato bot"
+                          src="https://media.licdn.com/dms/image/C4D0BAQHXl_XyT8nB4g/company-logo_200_200/0/1667865154349/atratopago_logo?e=2147483647&v=beta&t=LtEBU1IYu6ojylS96XaqNnRS8asGH7Xsj2KgIm03VJk"
+                        />
+                      </Avatar>
+                      <div className="max-w-[300px] bg-gray-100 rounded-lg p-2">
+                        <p className="text-sm">
+                          ¡Hola! ¿En qué puedo ayudarte hoy?
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="flex items-center justify-end space-x-2">
-                    <div className="max-w-[300px] bg-blue-100 rounded-lg p-2">
-                      <p className="text-sm">
-                        Quiero saber más sobre cómo pagar a mi propio ritmo.
-                      </p>
+                    <div className="flex items-center justify-end space-x-2">
+                      <div className="max-w-[300px] bg-blue-100 rounded-lg p-2">
+                        <p className="text-sm">
+                          Quiero saber más sobre cómo pagar a mi propio ritmo.
+                        </p>
+                      </div>
+                      <Avatar>
+                        <AvatarImage
+                          alt="User profile photo"
+                          src={image || ""}
+                        />
+                      </Avatar>
                     </div>
-                    <Avatar>
-                      <AvatarImage alt="User profile photo" src={image || ""} />
-                    </Avatar>
-                  </div>
-                </>
-              )}
-            </ScrollArea>
-          </div>
-          
-          <div className="flex items-center space-x-2">
-            <Input placeholder="Escribe tu mensaje aquí" type="text" />
-            <Button variant="secondary">Enviar</Button>
+                  </>
+                )}
+              </ScrollArea>
+            </div>
+
+            <div className="flex items-center space-x-2">
+              <Input placeholder="Escribe tu mensaje aquí" type="text" />
+              <Button variant="secondary">Enviar</Button>
+            </div>
           </div>
         </div>
-      </div>
-     </section> */}
+      </section>
     </div>
   );
 }
